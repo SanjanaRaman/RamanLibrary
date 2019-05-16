@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.ramanlibrary.MainActivity">
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="173dp"
+        android:layout_height="193dp"
+        android:text="add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/findButton"
+        tools:layout_editor_absoluteY="31dp"
+        tools:text="Add" />
+
+    <Button
+        android:id="@+id/findButton"
+        android:layout_width="173dp"
+        android:layout_height="193dp"
+        android:text="find"
+        app:layout_constraintBottom_toTopOf="@+id/checkOutButton"
+        app:layout_constraintEnd_toStartOf="@+id/addButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Find" />
+
+    <Button
+        android:id="@+id/checkInButton"
+        android:layout_width="351dp"
+        android:layout_height="97dp"
+        android:text="checkIn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkOutButton"
+        tools:layout_editor_absoluteX="17dp"
+        tools:text="Check in" />
+
+    <Button
+        android:id="@+id/checkOutButton"
+        android:layout_width="351dp"
+        android:layout_height="97dp"
+        android:text="checkOut"
+        app:layout_constraintBottom_toTopOf="@+id/checkInButton"
+        app:layout_constraintTop_toBottomOf="@+id/findButton"
+        tools:layout_editor_absoluteX="17dp"
+        tools:text="Check Out" />
+</android.support.constraint.ConstraintLayout>
